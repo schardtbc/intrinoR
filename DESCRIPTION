@@ -1,0 +1,26 @@
+Package: intrinoR
+Type: Package
+Title: Intrino Market Data Api Wrapper
+Version: 0.1.0
+Author: Bruce Curtis Schardt
+Maintainer: Bruce C. Schardt <schardt.bruce.curtis@gmail.com>
+Description: R lanquage interface to the extensive Intrino
+    market and financial data api. Intrino has broad selection of
+    historic and current data sources aggregated in one source.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+Imports:
+    magrittr,
+    dplyr,
+    glue,
+    httr,
+    tibble,
+    tidyr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr

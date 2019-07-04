@@ -1,0 +1,58 @@
+---
+title: "intrinoR"
+author: "Bruce C. Schardt"
+date: "7/2/2019"
+output: md_document
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+An R language wrapper for the Api [intrino](https://intrino.com) market data Api.
+
+You will need an account and api keys, [signup](https://intrinio.com/signup) for a free starter account.
+
+
+
+## Installation
+
+To install as a dependancy into your project at the R REPL command prompt
+
+```r
+install.github("schardtbc/intrinoR")
+```
+
+then in your .env or .Renviron file add the following keys
+
+```
+INTRINO_BASE_URL = "https://api-v2.intrinio.com"
+INTRINO_PRODUCTION_KEY  = "your production key here"
+INTRINO_SANDBOX_KEY = " your sandbox key here"
+INTRINO_API_VERSION = "v2"
+
+# use production and snadbox keys from your intrino account
+# make sure the .env file is in your .gitignore file
+# do not hard code the keys into your application code
+# do not upload the keys to github.
+# you can easily change the keys at intrino.com if they become compromised
+```
+
+## Api reference documentation
+
+[Api](https://docs.intrinio.com/documentation/api_v2/getting_started) documentation.
+
+
+## Usage Example
+
+```{r}
+library(intrinoR)
+useSandbox()
+# useProduction()
+
+res <- getSecurityStockPrices("AAPL", opts = list(start_date = "2019-01-01"))
+res
+```
+
+
