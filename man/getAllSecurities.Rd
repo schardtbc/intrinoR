@@ -52,7 +52,8 @@ All Securities
 Returns all Securities to which you have access. When parameters are specified, returns matching Securities.
 }
 \seealso{
-Other security endpoints: \code{\link{getSecurityById}},
+Other security endpoints: \code{\link{getCompanyById}},
+  \code{\link{getSecurityById}},
   \code{\link{getSecurityDataPointHistory}},
   \code{\link{getSecurityDataPointNumber}},
   \code{\link{getSecurityDataPointText}},

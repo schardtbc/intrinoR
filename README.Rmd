@@ -10,11 +10,11 @@ output: md_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-An R language wrapper for the Api [intrino](https://intrino.com) market data Api.
+## intrinoR
+
+An R language wrapper for the [INTRINO](https://intrino.com) market data Api.
 
 You will need an account and api keys, [signup](https://intrinio.com/signup) for a free starter account.
-
-
 
 ## Installation
 
@@ -39,9 +39,7 @@ INTRINO_API_VERSION = "v2"
 # you can easily change the keys at intrino.com if they become compromised
 ```
 
-## Api reference documentation
-
-[Api](https://docs.intrinio.com/documentation/api_v2/getting_started) documentation.
+[Api documentation](https://docs.intrinio.com/documentation/api_v2/getting_started) documentation.
 
 
 ## Usage Example

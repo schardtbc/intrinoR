@@ -21,6 +21,7 @@ current numerical value data-point tag for a security
 \url{https://data.intrinio.com/data-tags}
 
 Other security endpoints: \code{\link{getAllSecurities}},
+  \code{\link{getCompanyById}},
   \code{\link{getSecurityById}},
   \code{\link{getSecurityDataPointHistory}},
   \code{\link{getSecurityDataPointText}},

@@ -18,6 +18,7 @@ realtime price for security
 }
 \seealso{
 Other security endpoints: \code{\link{getAllSecurities}},
+  \code{\link{getCompanyById}},
   \code{\link{getSecurityById}},
   \code{\link{getSecurityDataPointHistory}},
   \code{\link{getSecurityDataPointNumber}},

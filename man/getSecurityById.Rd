@@ -19,6 +19,7 @@ Returns the Security with the given `identifier`
 }
 \seealso{
 Other security endpoints: \code{\link{getAllSecurities}},
+  \code{\link{getCompanyById}},
   \code{\link{getSecurityDataPointHistory}},
   \code{\link{getSecurityDataPointNumber}},
   \code{\link{getSecurityDataPointText}},
