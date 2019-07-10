@@ -62,16 +62,16 @@ Usage Example
 ### Companies
 
 |     | Endpoint                                      | function call              |
-|-----|:----------------------------------------------|:---------------------------|
-| [X] | /companies                                    | [`getAllCompanies`](/doc/getAllCompanies.md) |
-| [ ] | /companies/search                             |                            |
-| [X] | /companies/{identifier}                       | getCompany                 |
-| [X] | /companies/{identifier}/securties             | getCompanySecurities       |
-| [X] | /companies/{identifier}/news                  | getCompanyNews             |
-| [X] | /company/{identifier}/fundamentals            | getCompanyFundamentals     |
-| [X] | /company/{identifier/filings}                 | getCompanyFilings          |
-| [X] | /company/{identifier}/data_point/{tag}/number | getCompanyDataPointText    |
-| [X] | /company/{identifier}/data_point/{tag}/text   | getCompanyDataPointText    |
-| [X] | /company/{identifier}/historical_data/{tag}   | getCompanyDataPointHistory |
+|-----|:----------------------------------------------|:-------------------------------------------------------------------|
+| [X] | /companies                                    | [`getAllCompanies`](/doc/getAllCompanies.md)                       |
+| [ ] | /companies/search                             |                                                                    |
+| [X] | /companies/{identifier}                       | [`getCompany`](/doc/getCompany.md)                                 |
+| [X] | /companies/{identifier}/securties             | [`getCompanySecurities`](/doc/getCompanySecurities.md)             |
+| [X] | /companies/{identifier}/news                  | [`getCompanyNews`](/doc/getCompanyNews.md)                         |
+| [X] | /company/{identifier}/fundamentals            | [`getCompanyFundamentals`](/doc/getCompanyFundamentals.md)         |
+| [X] | /company/{identifier/filings}                 | [`getCompanyFilings`](/doc/getCompanyFilings.md)                   |
+| [X] | /company/{identifier}/data_point/{tag}/number | [`getCompanyDataPointNumber`](/doc/getCompanyDataPointNumber.md)   |
+| [X] | /company/{identifier}/data_point/{tag}/text   | [`getCompanyDataPointText`](/doc/getCompanyDataPointText.md)       |
+| [X] | /company/{identifier}/historical_data/{tag}   | [`getCompanyDataPointHistory`](/doc/getCompanyDataPointHistory.md) |
 
 

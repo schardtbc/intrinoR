@@ -63,7 +63,7 @@ res
 | [X] | /companies/{identifier}/news                  | [`getCompanyNews`](/doc/getCompanyNews.md)                         |
 | [X] | /company/{identifier}/fundamentals            | [`getCompanyFundamentals`](/doc/getCompanyFundamentals.md)         |
 | [X] | /company/{identifier/filings}                 | [`getCompanyFilings`](/doc/getCompanyFilings.md)                   |
-| [X] | /company/{identifier}/data_point/{tag}/number | [`getCompanyDataPointNumber`](/doc/getCompanyDataPointNumber.md)       |
+| [X] | /company/{identifier}/data_point/{tag}/number | [`getCompanyDataPointNumber`](/doc/getCompanyDataPointNumber.md)   |
 | [X] | /company/{identifier}/data_point/{tag}/text   | [`getCompanyDataPointText`](/doc/getCompanyDataPointText.md)       |
 | [X] | /company/{identifier}/historical_data/{tag}   | [`getCompanyDataPointHistory`](/doc/getCompanyDataPointHistory.md) |
 
