@@ -16,17 +16,14 @@ df {tibble}
 Returns the Company with the given \code{identifier}
 }
 \seealso{
-Other security endpoints: \code{\link{getAllSecurities}},
-  \code{\link{getIndicesDataPointHistory}},
-  \code{\link{getSecurityById}},
-  \code{\link{getSecurityDataPointHistory}},
-  \code{\link{getSecurityDataPointNumber}},
-  \code{\link{getSecurityDataPointText}},
-  \code{\link{getSecurityDividendsLatest}},
-  \code{\link{getSecurityEarningsLatest}},
-  \code{\link{getSecurityIntradayPrices}},
-  \code{\link{getSecurityRealtimePrice}},
-  \code{\link{getSecurityStockPrices}},
-  \code{\link{getSecurityZacksAnalystRatingsSnapshot}}
+Other company endpoints: \code{\link{getAllCompanies}},
+  \code{\link{getCompanyDataPointHistory}},
+  \code{\link{getCompanyDataPointNumber}},
+  \code{\link{getCompanyDataPointText}},
+  \code{\link{getCompanyFilings}},
+  \code{\link{getCompanyFundamentals}},
+  \code{\link{getCompanyIPOs}},
+  \code{\link{getCompanyNews}},
+  \code{\link{getCompanySecurities}}
 }
-\concept{security endpoints}
+\concept{company endpoints}

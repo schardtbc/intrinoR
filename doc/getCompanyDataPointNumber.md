@@ -17,12 +17,15 @@ Argument      |Description
 
 ## Other company endpoints
 
-  [`getAllCompanies`](getAllCompanies.html) ,
-  [`getCompanyDataPointHistory`](getCompanyDataPointHistory.html) ,
-  [`getCompanyDataPointText`](getCompanyDataPointText.html) ,
-  [`getCompanyIPOs`](getCompanyIPOs.html) ,
-  [`getCompanyNews`](getCompanyNews.html) ,
-  [`getCompanySecurities`](getCompanySecurities.html) 
+  [`getCompany`](getCompany.md) ,
+  [`getCompanyDataPointHistory`](getCompanyDataPointHistory.md) ,
+  [`getCompanyDataPointNumber`](getCompanyDataPointNumber.md) ,
+  [`getCompanyDataPointText`](getCompanyDataPointText.md) ,
+  [`getCompanyFundamentals`](getCompanyFundamentals.md) ,
+  [`getCompanyFilings`](getCompanyFilings.md) ,
+  [`getCompanyIPOs`](getCompanyIPOs.md) ,
+  [`getCompanyNews`](getCompanyNews.md) ,
+  [`getCompanySecurities`](getCompanySecurities.md) 
 
 ## See Also
  [https://data.intrinio.com/data-tags](https://data.intrinio.com/data-tags) 

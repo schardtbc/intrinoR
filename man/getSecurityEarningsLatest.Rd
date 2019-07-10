@@ -14,7 +14,6 @@ Returns latest available earnings information for the Security with the given \c
 }
 \seealso{
 Other security endpoints: \code{\link{getAllSecurities}},
-  \code{\link{getCompany}},
   \code{\link{getIndicesDataPointHistory}},
   \code{\link{getSecurityById}},
   \code{\link{getSecurityDataPointHistory}},

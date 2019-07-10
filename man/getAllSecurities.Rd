@@ -52,8 +52,7 @@ All Securities
 Returns all Securities to which you have access. When parameters are specified, returns matching Securities.
 }
 \seealso{
-Other security endpoints: \code{\link{getCompany}},
-  \code{\link{getIndicesDataPointHistory}},
+Other security endpoints: \code{\link{getIndicesDataPointHistory}},
   \code{\link{getSecurityById}},
   \code{\link{getSecurityDataPointHistory}},
   \code{\link{getSecurityDataPointNumber}},

@@ -17,13 +17,17 @@ Argument      |Description
 ```max_n```     |     number maximum results to return (defaults to 10)
 ```opts$page_size```     |     number Number of results returned per page default = 100
 
-### Other company endpoints
-  
-  [`getAllCompanies`](getAllCompanies.html) ,
-  [`getCompanyDataPointHistory`](getCompanyDataPointHistory.html) ,
-  [`getCompanyDataPointNumber`](getCompanyDataPointNumber.html) ,
-  [`getCompanyDataPointText`](getCompanyDataPointText.html) ,
-  [`getCompanyIPOs`](getCompanyIPOs.html) ,
-  [`getCompanySecurities`](getCompanySecurities.html) 
+
+###  Other company endpoints:
+
+  [`getCompany`](getCompany.md) ,
+  [`getCompanyDataPointHistory`](getCompanyDataPointHistory.md) ,
+  [`getCompanyDataPointNumber`](getCompanyDataPointNumber.md) ,
+  [`getCompanyDataPointText`](getCompanyDataPointText.md) ,
+  [`getCompanyFundamentals`](getCompanyFundamentals.md) ,
+  [`getCompanyFilings`](getCompanyFilings.md) ,
+  [`getCompanyIPOs`](getCompanyIPOs.md) ,
+  [`getCompanyNews`](getCompanyNews.md) ,
+  [`getCompanySecurities`](getCompanySecurities.md) 
 
 

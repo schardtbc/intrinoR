@@ -30,7 +30,6 @@ historical values data-point tag for a security over specified time range
 \url{https://data.intrinio.com/data-tags}
 
 Other security endpoints: \code{\link{getAllSecurities}},
-  \code{\link{getCompany}},
   \code{\link{getIndicesDataPointHistory}},
   \code{\link{getSecurityById}},
   \code{\link{getSecurityDataPointNumber}},

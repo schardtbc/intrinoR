@@ -24,7 +24,6 @@ end-of-day prices for a security over requested time
 }
 \seealso{
 Other security endpoints: \code{\link{getAllSecurities}},
-  \code{\link{getCompany}},
   \code{\link{getIndicesDataPointHistory}},
   \code{\link{getSecurityById}},
   \code{\link{getSecurityDataPointHistory}},

@@ -26,9 +26,16 @@ Argument      |Description
 ```opts.end_date```     |     String Date YYYY-MM-DD Filed before or after the given date
 ```opts.page_size```     |     Number The number of results to return (default to 100)
 
-## Value
+###  Other company endpoints:
 
-
- filings tibble 
+  [`getCompany`](getCompany.md) ,
+  [`getCompanyDataPointHistory`](getCompanyDataPointHistory.md) ,
+  [`getCompanyDataPointNumber`](getCompanyDataPointNumber.md) ,
+  [`getCompanyDataPointText`](getCompanyDataPointText.md) ,
+  [`getCompanyFundamentals`](getCompanyFundamentals.md) ,
+  [`getCompanyFilings`](getCompanyFilings.md) ,
+  [`getCompanyIPOs`](getCompanyIPOs.md) ,
+  [`getCompanyNews`](getCompanyNews.md) ,
+  [`getCompanySecurities`](getCompanySecurities.md) 
 
 

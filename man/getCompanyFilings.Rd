@@ -25,3 +25,15 @@ filings {tibble}
 \description{
 Returns a complete list of SEC filings for the Company with the given `identifier`
 }
+\seealso{
+Other company endpoints: \code{\link{getAllCompanies}},
+  \code{\link{getCompanyDataPointHistory}},
+  \code{\link{getCompanyDataPointNumber}},
+  \code{\link{getCompanyDataPointText}},
+  \code{\link{getCompanyFundamentals}},
+  \code{\link{getCompanyIPOs}},
+  \code{\link{getCompanyNews}},
+  \code{\link{getCompanySecurities}},
+  \code{\link{getCompany}}
+}
+\concept{company endpoints}

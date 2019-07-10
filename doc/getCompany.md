@@ -14,19 +14,16 @@ Argument      |Description
 ------------- |----------------
 ```identifier```     |     A Company identifier (Ticker, CIK, LEI, Intrinio ID)
 
-###  Other security endpoints:
+###  Other company endpoints:
 
-  [`getAllSecurities`](getAllSecurities.md) ,
-  [`getIndicesDataPointHistory`](getIndicesDataPointHistory.md) ,
-  [`getSecurityById`](getSecurityById.md) ,
-  [`getSecurityDataPointHistory`](getSecurityDataPointHistory.md) ,
-  [`getSecurityDataPointNumber`](getSecurityDataPointNumber.md) ,
-  [`getSecurityDataPointText`](getSecurityDataPointText.md) ,
-  [`getSecurityDividendsLatest`](getSecurityDividendsLatest.md) ,
-  [`getSecurityEarningsLatest`](getSecurityEarningsLatest.md) ,
-  [`getSecurityIntradayPrices`](getSecurityIntradayPrices.md) ,
-  [`getSecurityRealtimePrice`](getSecurityRealtimePrice.md) ,
-  [`getSecurityStockPrices`](getSecurityStockPrices.md) ,
-  [`getSecurityZacksAnalystRatingsSnapshot`](getSecurityZacksAnalystRatingsSnapshot.md) 
+  [`getCompany`](getCompany.md) ,
+  [`getCompanyDataPointHistory`](getCompanyDataPointHistory.md) ,
+  [`getCompanyDataPointNumber`](getCompanyDataPointNumber.md) ,
+  [`getCompanyDataPointText`](getCompanyDataPointText.md) ,
+  [`getCompanyFundamentals`](getCompanyFundamentals.md) ,
+  [`getCompanyFilings`](getCompanyFilings.md) ,
+  [`getCompanyIPOs`](getCompanyIPOs.md) ,
+  [`getCompanyNews`](getCompanyNews.md) ,
+  [`getCompanySecurities`](getCompanySecurities.md) 
 
 

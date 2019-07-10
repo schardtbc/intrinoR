@@ -29,7 +29,7 @@ Stock Market Indices: "$SPX"   "$DJI"   "$DJA"   "$TRAN"  "$UTIL"  "$NDX"   "$CO
 \url{https://data.intrinio.com/data-tags}
 
 Other security endpoints: \code{\link{getAllSecurities}},
-  \code{\link{getCompany}}, \code{\link{getSecurityById}},
+  \code{\link{getSecurityById}},
   \code{\link{getSecurityDataPointHistory}},
   \code{\link{getSecurityDataPointNumber}},
   \code{\link{getSecurityDataPointText}},

@@ -34,8 +34,11 @@ historical values data-point tag for a company over specified time range
 Other company endpoints: \code{\link{getAllCompanies}},
   \code{\link{getCompanyDataPointNumber}},
   \code{\link{getCompanyDataPointText}},
+  \code{\link{getCompanyFilings}},
+  \code{\link{getCompanyFundamentals}},
   \code{\link{getCompanyIPOs}},
   \code{\link{getCompanyNews}},
-  \code{\link{getCompanySecurities}}
+  \code{\link{getCompanySecurities}},
+  \code{\link{getCompany}}
 }
 \concept{company endpoints}

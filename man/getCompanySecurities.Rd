@@ -20,7 +20,9 @@ Other company endpoints: \code{\link{getAllCompanies}},
   \code{\link{getCompanyDataPointHistory}},
   \code{\link{getCompanyDataPointNumber}},
   \code{\link{getCompanyDataPointText}},
+  \code{\link{getCompanyFilings}},
+  \code{\link{getCompanyFundamentals}},
   \code{\link{getCompanyIPOs}},
-  \code{\link{getCompanyNews}}
+  \code{\link{getCompanyNews}}, \code{\link{getCompany}}
 }
 \concept{company endpoints}

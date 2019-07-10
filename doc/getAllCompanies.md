@@ -23,14 +23,15 @@ Argument      |Description
 ```opts$hasStockPrices```     |     Boolean Return only companies that have stock prices when true
 ```opts$pageSize```     |     Number The number of results to return (default to 100)
 
-### Returns
 
 ###  Other company endpoints:
 
-
+  [`getCompany`](getCompany.md) ,
   [`getCompanyDataPointHistory`](getCompanyDataPointHistory.md) ,
   [`getCompanyDataPointNumber`](getCompanyDataPointNumber.md) ,
   [`getCompanyDataPointText`](getCompanyDataPointText.md) ,
+  [`getCompanyFundamentals`](getCompanyFundamentals.md) ,
+  [`getCompanyFilings`](getCompanyFilings.md) ,
   [`getCompanyIPOs`](getCompanyIPOs.md) ,
   [`getCompanyNews`](getCompanyNews.md) ,
   [`getCompanySecurities`](getCompanySecurities.md) 

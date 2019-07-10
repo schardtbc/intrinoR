@@ -23,8 +23,21 @@ current text value of data-point tag for a company
 Other company endpoints: \code{\link{getAllCompanies}},
   \code{\link{getCompanyDataPointHistory}},
   \code{\link{getCompanyDataPointNumber}},
+  \code{\link{getCompanyFilings}},
+  \code{\link{getCompanyFundamentals}},
   \code{\link{getCompanyIPOs}},
   \code{\link{getCompanyNews}},
-  \code{\link{getCompanySecurities}}
+  \code{\link{getCompanySecurities}},
+  \code{\link{getCompany}}
+
+Other company endpoints: \code{\link{getAllCompanies}},
+  \code{\link{getCompanyDataPointHistory}},
+  \code{\link{getCompanyDataPointNumber}},
+  \code{\link{getCompanyFilings}},
+  \code{\link{getCompanyFundamentals}},
+  \code{\link{getCompanyIPOs}},
+  \code{\link{getCompanyNews}},
+  \code{\link{getCompanySecurities}},
+  \code{\link{getCompany}}
 }
 \concept{company endpoints}
