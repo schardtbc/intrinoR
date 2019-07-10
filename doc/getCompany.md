@@ -1,4 +1,6 @@
-### `getCompany`: Returns the Company with the given `identifier`
+### `getCompany`
+
+Returns the Company with the given `identifier`
 
 ### Usage
 

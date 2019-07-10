@@ -1,4 +1,5 @@
-### `getAllCompanies`: All Companies
+### `getAllCompanies`
+
  Returns all Companies. When parameters are specified, returns matching companies.
 
 ### Usage

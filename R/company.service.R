@@ -43,7 +43,7 @@ getAllCompanies <- function(opts = list()){
 #' Returns the Company with the given `identifier`
 #' @param identifier A Company identifier (Ticker, CIK, LEI, Intrinio ID)
 #' @return df {tibble}
-#' @family security endpoints
+#' @family company endpoints
 #' @export
 getCompany <- function(identifier) {
   endpoint <- list()
@@ -143,6 +143,7 @@ getCompanyNews <- function(identifier, opts = list(), max_n = 10) {
 #' @param opts.end_date {String} Date YYYY-MM-DD Only on or before the given date
 #' @param opts.page_size {Number} opts.pageSize The number of results to return (default to 100)
 #' @return fundamentalds {tibble}
+#' @family company endpoints
 #' @export
 getCompanyFundamentals <- function(identifier, opts = list()) {
   endpoint <- list()
@@ -183,6 +184,7 @@ getCompanyFundamentals <- function(identifier, opts = list()) {
 #' @param opts.end_date {String} Date YYYY-MM-DD Filed before or after the given date
 #' @param opts.page_size {Number}  The number of results to return (default to 100)
 #' @return filings {tibble}
+#' @family company endpoints
 #' @export
 getCompanyFilings <- function(identifier, opts = list()) {
   endpoint <- list()
@@ -218,6 +220,7 @@ getCompanyFilings <- function(identifier, opts = list()) {
 #' @seealso \url{https://data.intrinio.com/data-tags}
 #' @family company endpoints
 #' @return {numeric}
+#' @family company endpoints
 #' @export
 getCompanyDataPointNumber <- function(identifier, tag) {
   endpoint <- list()
@@ -240,6 +243,7 @@ getCompanyDataPointNumber <- function(identifier, tag) {
 #' @seealso \url{https://data.intrinio.com/data-tags}
 #' @family company endpoints
 #' @return {String}
+#' @family company endpoints
 #' @export
 getCompanyDataPointText <- function(identifier, tag) {
   endpoint <- list()
