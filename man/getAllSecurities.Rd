@@ -52,13 +52,15 @@ All Securities
 Returns all Securities to which you have access. When parameters are specified, returns matching Securities.
 }
 \seealso{
-Other security endpoints: \code{\link{getCompanyById}},
+Other security endpoints: \code{\link{getCompany}},
+  \code{\link{getIndicesDataPointHistory}},
   \code{\link{getSecurityById}},
   \code{\link{getSecurityDataPointHistory}},
   \code{\link{getSecurityDataPointNumber}},
   \code{\link{getSecurityDataPointText}},
   \code{\link{getSecurityDividendsLatest}},
   \code{\link{getSecurityEarningsLatest}},
+  \code{\link{getSecurityIntradayPrices}},
   \code{\link{getSecurityRealtimePrice}},
   \code{\link{getSecurityStockPrices}},
   \code{\link{getSecurityZacksAnalystRatingsSnapshot}}

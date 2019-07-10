@@ -45,7 +45,7 @@ getAllCompanies <- function(opts = list()){
 #' @return df {tibble}
 #' @family security endpoints
 #' @export
-getCompanyById <- function(identifier) {
+getCompany <- function(identifier) {
   endpoint <- list()
   class(endpoint)<- "url"
   endpoint$path <- glue::glue("/companies/{identifier}")

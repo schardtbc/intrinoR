@@ -53,4 +53,18 @@ res <- getSecurityStockPrices("AAPL", opts = list(start_date = "2019-01-01"))
 res
 ```
 
+### Companies
+|     | Endpoint                                      | function call              |
+|-----|:----------------------------------------------|:---------------------------------------------|
+| [X] | /companies                                    | [`getAllCompanies`](/doc/getAllCompanies.md) |
+| [ ] | /companies/search                             |                                              |
+| [X] | /companies/{identifier}                       | [`getCompany`](/doc/getAllCompanies.md)      |
+| [X] | /companies/{identifier}/securties             | getCompanySecurities                         |
+| [X] | /companies/{identifier}/news                  | getCompanyNews                               |
+| [X] | /company/{identifier}/fundamentals            | getCompanyFundamentals                       |
+| [X] | /company/{identifier/filings}                 | getCompanyFilings                            |
+| [X] | /company/{identifier}/data_point/{tag}/number | getCompanyDataPointText                      |
+| [X] | /company/{identifier}/data_point/{tag}/text   | getCompanyDataPointText                      |
+| [X] | /company/{identifier}/historical_data/{tag}   | getCompanyDataPointHistory                   |
+
 

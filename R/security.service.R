@@ -129,6 +129,44 @@ getSecurityRealtimePrice <- function(identifier, opts=list()) {
   return (df)
 }
 
+#' intraday prices for a security over requested time
+#' @param identifier {String} A Security identifier (Ticker, FIGI, ISIN, CUSIP, Intrinio ID)
+#' @param opts {named list} Optional query params for endpoint
+#' @param opts$start_date {Date} YYYY-MM-DD Return prices on or after the date
+#' @param opts$end_date'{Date} YYYY-MM-DD Return prices on or before the date
+#' @param opts$start_time {Date} YYYY-MM-DD Return prices on or after the date
+#' @param opts$end_date': {Date} YYYY-MM-DD Return prices on or before the date
+#' @param opts$page_size' {number = 100} The number of results to return per page
+#' @family security endpoints
+#' @export
+getSecurityIntradayPrices <- function(identifier, opts=list(), max_records = 1000) {
+  endpoint <- list()
+  class(endpoint)<- "url"
+  endpoint$path <- glue::glue("/securities/{identifier}/prices/intraday")
+  endpoint$query <- opts
+  res <- intrino_fetch(endpoint)
+  if (!res$status){
+    ticker <- res$content$security$ticker[[1]];
+    res_data <- lapply(res$content$intraday_prices,function(x) lapply(x, function(y) ifelse(is.null(y),NA,y)))
+    df <- tibble::as_tibble(do.call(rbind,res_data)) %>% tidyr::unnest()
+    while (!is.null(res$content$next_page) && nrow(df) <= max_records) {
+      res <- intrino_fetch(endpoint,res$content$next_page)
+      if (!res$status) {
+        res_data <- lapply(res$content$intraday_prices,function(x) lapply(x, function(y) ifelse(is.null(y),NA,y)))
+        np <- tibble::as_tibble(do.call(rbind,res_data)) %>% tidyr::unnest()
+        df <- dplyr::bind_rows(df,np)
+        show(nrow(df))
+      } else {
+        break
+      }
+    }
+    df <- df %>% tibble::add_column(symbol = ticker, .before = 1)
+  } else {
+    df <- tibble::as_tibble(list())
+  }
+  return (df)
+}
+
 
 #' Returns the latest available dividend information for the Security with the given `identifier`
 #' @param identifier {String} A Security identifier (Ticker, FIGI, ISIN, CUSIP, Intrinio ID)
