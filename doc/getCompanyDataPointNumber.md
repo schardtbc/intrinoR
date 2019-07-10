@@ -1,21 +1,21 @@
-# `getCompanyDataPointNumber`
+### `getCompanyDataPointNumber`
 
 Returns current numerical value data-point tag for a company
 
-## Usage
+### Usage
 
 ```r
 getCompanyDataPointNumber(identifier, tag)
 ```
 
-## Arguments
+### Arguments
 
 Argument      |Description
 ------------- |----------------
 ```identifier```     |     String A company identifier (Ticker, FIGI, ISIN, CUSIP, Intrinio ID)
 ```tag```     |     String An Intrinio data tag ID or code
 
-## Other company endpoints
+### Other company endpoints
 
   [`getCompany`](getCompany.md) ,
   [`getCompanyDataPointHistory`](getCompanyDataPointHistory.md) ,
@@ -27,5 +27,6 @@ Argument      |Description
   [`getCompanyNews`](getCompanyNews.md) ,
   [`getCompanySecurities`](getCompanySecurities.md) 
 
-## See Also
+### See Also
+
  [https://data.intrinio.com/data-tags](https://data.intrinio.com/data-tags) 

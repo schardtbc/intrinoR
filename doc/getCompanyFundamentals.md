@@ -1,22 +1,14 @@
-# `getCompanyFundamentals`
+### `getCompanyFundamentals`
 
  Returns all Fundamentals for the Company with the given `identifier`. Returns Fundamentals matching parameters when supplied.
 
-## Description
-
-
- All Fundamentals by Company
- Returns all Fundamentals for the Company with the given `identifier`. Returns Fundamentals matching parameters when supplied.
-
-
-## Usage
+### Usage
 
 ```r
 getCompanyFundamentals(identifier, opts = list())
 ```
 
-
-## Arguments
+### Arguments
 
 Argument      |Description
 ------------- |----------------

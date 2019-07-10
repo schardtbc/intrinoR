@@ -58,7 +58,6 @@ Usage Example
     ## # … with 120 more rows, and 5 more variables: adj_open <dbl>,
     ## #   adj_high <dbl>, adj_low <dbl>, adj_close <dbl>, adj_volume <dbl>
 
-
 ### Companies
 
 |     | Endpoint                                      | function call              |
@@ -74,4 +73,17 @@ Usage Example
 | [X] | /company/{identifier}/data_point/{tag}/text   | [`getCompanyDataPointText`](/doc/getCompanyDataPointText.md)       |
 | [X] | /company/{identifier}/historical_data/{tag}   | [`getCompanyDataPointHistory`](/doc/getCompanyDataPointHistory.md) |
 
+
+### Securities
+
+|     | Endpoint                                      | function call              |
+|-----|:----------------------------------------------|:-------------------------------------------------------------------|
+| [X] | /securities                                   | [`getAllSecurities](/doc/getAllSecurities.md)                      |
+| [X] | /securities/{identifier}                      | [`getSecurityById`](getSecurityById.md)                            |
+| [X] | /securities/{identifier}/prices               | [`getSecurityStockPrices`](getSecurityStockPrices.md)              |
+| [X] | /securities/{identifier}/prices/realtime      | [`getSecurityRealtimePrice`](getSecurityRealtimePrice.md)          |
+| [X] | /securities/{identifier}/prices/intraday      | [`getSecurityIntradayPrices`](getSecurityIntradayPrices.md)        |
+| [X] | /securities/{identifier}/dividends/latest     | [`getSecurityDividendsLatest`](getSecurityDividendsLatest.md)      |
+| [X] | /securities/{identifier}/earnings/latest      | [`getSecurityEarningsLatest`](getSecurityEarningsLatest.md)        |
+| [X] | /securities/{identifier}/zacks/analyst_ratings/snapshot | [`getSecurityZacksAnalystRatingsSnapshot`](getSecurityZacksAnalystRatingsSnapshot.md) |
 

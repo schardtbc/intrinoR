@@ -1,21 +1,14 @@
-# `getCompanyFilings`
-
-Returns All Filings by Company
-
-## Description
-
+### `getCompanyFilings`
 
  Returns a complete list of SEC filings for the Company with the given `identifier`
 
-
-## Usage
+### Usage
 
 ```r
 getCompanyFilings(identifier, opts = list())
 ```
 
-
-## Arguments
+### Arguments
 
 Argument      |Description
 ------------- |----------------
