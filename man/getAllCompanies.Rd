@@ -2,8 +2,7 @@
 % Please edit documentation in R/company.service.R
 \name{getAllCompanies}
 \alias{getAllCompanies}
-\title{All Companies
-Returns all Companies. When parameters are specified, returns matching companies.}
+\title{Returns all Companies. When parameters are specified, returns matching companies.}
 \usage{
 getAllCompanies(opts = list())
 }
@@ -32,15 +31,17 @@ getAllCompanies(opts = list())
 companies {tibble}
 }
 \description{
-All Companies
 Returns all Companies. When parameters are specified, returns matching companies.
 }
 \seealso{
 Other company endpoints: \code{\link{getCompanyDataPointHistory}},
   \code{\link{getCompanyDataPointNumber}},
   \code{\link{getCompanyDataPointText}},
+  \code{\link{getCompanyFilings}},
+  \code{\link{getCompanyFundamentals}},
   \code{\link{getCompanyIPOs}},
   \code{\link{getCompanyNews}},
-  \code{\link{getCompanySecurities}}
+  \code{\link{getCompanySecurities}},
+  \code{\link{getCompany}}
 }
 \concept{company endpoints}

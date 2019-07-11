@@ -2,8 +2,7 @@
 % Please edit documentation in R/security.service.R
 \name{getSecurityById}
 \alias{getSecurityById}
-\title{Lookup Security
-Returns the Security with the given `identifier`}
+\title{Returns the Security with the given `identifier`}
 \usage{
 getSecurityById(identifier)
 }
@@ -14,17 +13,17 @@ getSecurityById(identifier)
 df {tibble}
 }
 \description{
-Lookup Security
 Returns the Security with the given `identifier`
 }
 \seealso{
 Other security endpoints: \code{\link{getAllSecurities}},
-  \code{\link{getCompanyById}},
+  \code{\link{getIndicesDataPointHistory}},
   \code{\link{getSecurityDataPointHistory}},
   \code{\link{getSecurityDataPointNumber}},
   \code{\link{getSecurityDataPointText}},
   \code{\link{getSecurityDividendsLatest}},
   \code{\link{getSecurityEarningsLatest}},
+  \code{\link{getSecurityIntradayPrices}},
   \code{\link{getSecurityRealtimePrice}},
   \code{\link{getSecurityStockPrices}},
   \code{\link{getSecurityZacksAnalystRatingsSnapshot}}

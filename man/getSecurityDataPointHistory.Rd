@@ -2,7 +2,7 @@
 % Please edit documentation in R/security.service.R
 \name{getSecurityDataPointHistory}
 \alias{getSecurityDataPointHistory}
-\title{historical values data-point tag for a security over specified time range}
+\title{Returns time-series of historical values data-point tag for a security over specified time range}
 \usage{
 getSecurityDataPointHistory(identifier, tag, opts = list())
 }
@@ -15,27 +15,28 @@ getSecurityDataPointHistory(identifier, tag, opts = list())
 
 \item{opts$start_date}{{Date} YYYY-MM-DD Return prices on or after the date}
 
-\item{opts$end_date':}{{Date} YYYY-MM-DD Return prices on or before the date}
+\item{opts$end_date}{{Date} YYYY-MM-DD Return prices on or before the date}
 
 \item{opts$sort_order}{{String = "desc"} desc | asc}
 
-\item{opts$frequency:}{{String = "daily"} daily | weekly | monthly | quarterly | yearly Return stock prices in the given frequency}
+\item{opts$frequency}{{String = "daily"} daily | weekly | monthly | quarterly | yearly Return stock prices in the given frequency}
 
-\item{opts$page_size':}{{number = 100} The number of results to return per page}
+\item{opts$page_size}{{number = 100} The number of results to return per page}
 }
 \description{
-historical values data-point tag for a security over specified time range
+Returns time-series of historical values data-point tag for a security over specified time range
 }
 \seealso{
 \url{https://data.intrinio.com/data-tags}
 
 Other security endpoints: \code{\link{getAllSecurities}},
-  \code{\link{getCompanyById}},
+  \code{\link{getIndicesDataPointHistory}},
   \code{\link{getSecurityById}},
   \code{\link{getSecurityDataPointNumber}},
   \code{\link{getSecurityDataPointText}},
   \code{\link{getSecurityDividendsLatest}},
   \code{\link{getSecurityEarningsLatest}},
+  \code{\link{getSecurityIntradayPrices}},
   \code{\link{getSecurityRealtimePrice}},
   \code{\link{getSecurityStockPrices}},
   \code{\link{getSecurityZacksAnalystRatingsSnapshot}}

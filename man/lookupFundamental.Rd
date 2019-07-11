@@ -2,8 +2,7 @@
 % Please edit documentation in R/fundamentals.service.R
 \name{lookupFundamental}
 \alias{lookupFundamental}
-\title{Lookup Fundamental
-Returns the Fundamental for the Company with the given `identifier` and with the given parameters}
+\title{Returns the fundamental financial data for the Company with the given `identifier` and with the given parameters}
 \usage{
 lookupFundamental(identifier, statement_code, fiscal_year, fiscal_period)
 }
@@ -17,14 +16,13 @@ lookupFundamental(identifier, statement_code, fiscal_year, fiscal_period)
 \item{fiscal_period}{{String} Q1TTM | Q2TTM | Q3TTM | FY | Q1 | Q2 | Q3 | Q4 | Q2YTD | Q3YTD The fiscal period}
 }
 \description{
-Lookup Fundamental
-Returns the Fundamental for the Company with the given `identifier` and with the given parameters
+Returns the fundamental financial data for the Company with the given `identifier` and with the given parameters
 }
 \seealso{
 Other fundamental endpoints: \code{\link{getFundamentalById}},
-  \code{\link{getReportedFinancialsWide}},
+  \code{\link{getReportedFinancialsTable}},
   \code{\link{getReportedFinancials}},
-  \code{\link{getStandardizedFinancialsWide}},
+  \code{\link{getStandardizedFinancialsTable}},
   \code{\link{getStandardizedFinancials}}
 }
 \concept{fundamental endpoints}

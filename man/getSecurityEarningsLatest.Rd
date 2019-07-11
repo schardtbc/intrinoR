@@ -14,12 +14,13 @@ Returns latest available earnings information for the Security with the given \c
 }
 \seealso{
 Other security endpoints: \code{\link{getAllSecurities}},
-  \code{\link{getCompanyById}},
+  \code{\link{getIndicesDataPointHistory}},
   \code{\link{getSecurityById}},
   \code{\link{getSecurityDataPointHistory}},
   \code{\link{getSecurityDataPointNumber}},
   \code{\link{getSecurityDataPointText}},
   \code{\link{getSecurityDividendsLatest}},
+  \code{\link{getSecurityIntradayPrices}},
   \code{\link{getSecurityRealtimePrice}},
   \code{\link{getSecurityStockPrices}},
   \code{\link{getSecurityZacksAnalystRatingsSnapshot}}

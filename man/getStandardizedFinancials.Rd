@@ -2,7 +2,7 @@
 % Please edit documentation in R/fundamentals.service.R
 \name{getStandardizedFinancials}
 \alias{getStandardizedFinancials}
-\title{Returns professional-grade historical financial data. for the given \code{id}.}
+\title{Returns professional-grade standardized historical financial data. for the given \code{id}.}
 \usage{
 getStandardizedFinancials(id)
 }
@@ -22,9 +22,9 @@ company’s fundamentals and across all companies' fundamentals.
 }
 \seealso{
 Other fundamental endpoints: \code{\link{getFundamentalById}},
-  \code{\link{getReportedFinancialsWide}},
+  \code{\link{getReportedFinancialsTable}},
   \code{\link{getReportedFinancials}},
-  \code{\link{getStandardizedFinancialsWide}},
+  \code{\link{getStandardizedFinancialsTable}},
   \code{\link{lookupFundamental}}
 }
 \concept{fundamental endpoints}

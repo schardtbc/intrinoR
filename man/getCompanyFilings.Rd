@@ -2,7 +2,7 @@
 % Please edit documentation in R/company.service.R
 \name{getCompanyFilings}
 \alias{getCompanyFilings}
-\title{All Filings by Company}
+\title{Returns a complete list of SEC filings for the Company with the given `identifier`}
 \usage{
 getCompanyFilings(identifier, opts = list())
 }
@@ -11,13 +11,13 @@ getCompanyFilings(identifier, opts = list())
 
 \item{opts}{{named list} Optional parameters}
 
-\item{opts.report_type}{{String} Filter by <a href=&quot;/documentation/sec_filing_report_types&quot; target=&quot;_blank&quot;>report type</a>. Separate values with commas to return multiple report types.}
+\item{opts$report_type}{{String} Filter by <a href=&quot;/documentation/sec_filing_report_types&quot; target=&quot;_blank&quot;>report type</a>. Separate values with commas to return multiple report types.}
 
-\item{opts.start_date}{{String} Date YYYY-MM-DD Filed on or after the given date}
+\item{opts$start_date}{{String} Date YYYY-MM-DD Filed on or after the given date}
 
-\item{opts.end_date}{{String} Date YYYY-MM-DD Filed before or after the given date}
+\item{opts$end_date}{{String} Date YYYY-MM-DD Filed before or after the given date}
 
-\item{opts.page_size}{{Number}  The number of results to return (default to 100)}
+\item{opts$page_size}{{Number}  The number of results to return (default to 100)}
 }
 \value{
 filings {tibble}
@@ -25,3 +25,15 @@ filings {tibble}
 \description{
 Returns a complete list of SEC filings for the Company with the given `identifier`
 }
+\seealso{
+Other company endpoints: \code{\link{getAllCompanies}},
+  \code{\link{getCompanyDataPointHistory}},
+  \code{\link{getCompanyDataPointNumber}},
+  \code{\link{getCompanyDataPointText}},
+  \code{\link{getCompanyFundamentals}},
+  \code{\link{getCompanyIPOs}},
+  \code{\link{getCompanyNews}},
+  \code{\link{getCompanySecurities}},
+  \code{\link{getCompany}}
+}
+\concept{company endpoints}

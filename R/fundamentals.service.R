@@ -1,7 +1,6 @@
 
 
-#' Lookup Fundamental
-#' Returns the Fundamental for the Company with the given &#x60;identifier&#x60; and with the given parameters
+#' Returns the fundamental financial data for the Company with the given &#x60;identifier&#x60; and with the given parameters
 #' @param identifier {String}  A Company identifier (Ticker, CIK, LEI, Intrinio ID)
 #' @param statement_code {String} income_statment | balance_sheet_statement | cash_flow_statement | calculations The statement code
 #' @param fiscal_year {Number} fiscalYear The fiscal year
@@ -26,7 +25,7 @@ lookupFundamental <- function(identifier, statement_code, fiscal_year, fiscal_pe
   return (df)
 }
 
-#' Returns detailed fundamental data for the given `id`.
+#' Returns detailed fundamental financial data for the given `id`.
 #' @param id {String}  The Intrinio ID for the Fundamental
 #' @family fundamental endpoints
 #' @export
@@ -48,7 +47,7 @@ getFundamentalById <- function(id) {
   return (df)
 }
 
-#' Returns professional-grade historical financial data. for the given `id`.
+#' Returns professional-grade standardized historical financial data. for the given `id`.
 #'
 #'  Returns professional-grade historical financial data.
 #'  This data is standardized, cleansed and verified to ensure the highest quality
@@ -88,7 +87,7 @@ getStandardizedFinancials <- function(id){
     return (df)
 }
 
-#' Returns professional-grade historical financial data. for the given `id`.
+#' Returns professional-grade standardized historical financial data for the given `id`.
 #'
 #'  Returns professional-grade historical financial data.
 #'  This data is standardized, cleansed and verified to ensure the highest quality
@@ -101,7 +100,7 @@ getStandardizedFinancials <- function(id){
 #' @return standardized_financials {tibble} formated as wide table with one column per metric tag
 #' @family fundamental endpoints
 #' @export
-getStandardizedFinancialsWide <- function(id){
+getStandardizedFinancialsTable <- function(id){
   endpoint <- list()
   class(endpoint)<- "url"
   endpoint$path <- glue::glue("/fundamentals/{id}/standardized_financials")
@@ -140,7 +139,7 @@ getStandardizedFinancialsWide <- function(id){
 #' @return reported_financials {tibble} formated as wide table with one column per metric tag
 #' @family fundamental endpoints
 #' @export
-getReportedFinancialsWide <- function(id){
+getReportedFinancialsTable <- function(id){
   endpoint <- list()
   class(endpoint)<- "url"
   endpoint$path <- glue::glue("/fundamentals/{id}/reported_financials")

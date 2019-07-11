@@ -1,4 +1,3 @@
-#' All Securities
 #' Returns all Securities to which you have access. When parameters are specified, returns matching Securities.
 #' @param  opts {named list} Optional parameters
 #' @param  opts$active {Boolean} When true, return securities that are active. When false, return securities that are not active. A security is considered active if it has traded or has had a corporate action in the past 30 days, and has not been merged into another security (such as due to ticker changes or corporate restructurings).
@@ -46,8 +45,6 @@ getAllSecurities <- function(opts = list()){
    return (df)
 }
 
-
-#' Lookup Security
 #' Returns the Security with the given &#x60;identifier&#x60;
 #' @param  identifier {String} A Security identifier (Ticker, FIGI, ISIN, CUSIP, Intrinio ID)
 #' @return df {tibble}
@@ -68,13 +65,13 @@ getSecurityById <- function(identifier) {
   return (df)
 }
 
-#' end-of-day prices for a security over requested time
+#' Returns end-of-day prices for a security over requested time
 #' @param identifier {String} A Security identifier (Ticker, FIGI, ISIN, CUSIP, Intrinio ID)
 #' @param opts {named list} Optional query params for endpoint
 #' @param opts$start_date {Date} YYYY-MM-DD Return prices on or after the date
-#' @param opts$end_date': {Date} YYYY-MM-DD Return prices on or before the date
-#' @param opts$frequency: {String = "daily"} daily | weekly | monthly | quarterly | yearly Return stock prices in the given frequency
-#' @param opts$page_size': {number = 100} The number of results to return per page
+#' @param opts$end_date {Date} YYYY-MM-DD Return prices on or before the date
+#' @param opts$frequency {String = "daily"} daily | weekly | monthly | quarterly | yearly Return stock prices in the given frequency
+#' @param opts$page_size {number = 100} The number of results to return per page
 #' @family security endpoints
 #' @export
 getSecurityStockPrices <- function(identifier, opts=list()) {
@@ -105,7 +102,7 @@ getSecurityStockPrices <- function(identifier, opts=list()) {
 }
 
 
-#' realtime price for security
+#' Returns realtime price for security
 #' @param identifier {String} A Security identifier (Ticker, FIGI, ISIN, CUSIP, Intrinio ID)
 #' @param opts {named list} Optional query params for endpoint
 #' @param opts$source {String} iex | bats | bats_delayed | utp_delayed | cta_a_delayed | cta_b_delayed (defaults to best source availiable)
@@ -122,6 +119,44 @@ getSecurityRealtimePrice <- function(identifier, opts=list()) {
     res$content$security <- NULL
     res_data <- lapply(res$content,function(x) ifelse(is.null(x),NA,x))
     df <- tibble::as_tibble(res_data) %>% tidyr::unnest()
+    df <- df %>% tibble::add_column(symbol = ticker, .before = 1)
+  } else {
+    df <- tibble::as_tibble(list())
+  }
+  return (df)
+}
+
+#' Returns intraday prices for a security over requested time
+#' @param identifier {String} A Security identifier (Ticker, FIGI, ISIN, CUSIP, Intrinio ID)
+#' @param opts {named list} Optional query params for endpoint
+#' @param opts$start_date {Date} YYYY-MM-DD Return prices on or after the date
+#' @param opts$end_date {Date} YYYY-MM-DD Return prices on or before the date
+#' @param opts$start_time {Date} YYYY-MM-DD Return prices on or after the date
+#' @param opts$end_date {Date} YYYY-MM-DD Return prices on or before the date
+#' @param opts$page_size {number = 100} The number of results to return per page
+#' @family security endpoints
+#' @export
+getSecurityIntradayPrices <- function(identifier, opts=list(), max_records = 1000) {
+  endpoint <- list()
+  class(endpoint)<- "url"
+  endpoint$path <- glue::glue("/securities/{identifier}/prices/intraday")
+  endpoint$query <- opts
+  res <- intrino_fetch(endpoint)
+  if (!res$status){
+    ticker <- res$content$security$ticker[[1]];
+    res_data <- lapply(res$content$intraday_prices,function(x) lapply(x, function(y) ifelse(is.null(y),NA,y)))
+    df <- tibble::as_tibble(do.call(rbind,res_data)) %>% tidyr::unnest()
+    while (!is.null(res$content$next_page) && nrow(df) <= max_records) {
+      res <- intrino_fetch(endpoint,res$content$next_page)
+      if (!res$status) {
+        res_data <- lapply(res$content$intraday_prices,function(x) lapply(x, function(y) ifelse(is.null(y),NA,y)))
+        np <- tibble::as_tibble(do.call(rbind,res_data)) %>% tidyr::unnest()
+        df <- dplyr::bind_rows(df,np)
+        show(nrow(df))
+      } else {
+        break
+      }
+    }
     df <- df %>% tibble::add_column(symbol = ticker, .before = 1)
   } else {
     df <- tibble::as_tibble(list())
@@ -204,7 +239,7 @@ getSecurityZacksAnalystRatingsSnapshot <- function(identifier, opts = list()) {
 }
 
 
-#' current numerical value data-point tag for a security
+#' Returns current numerical value data-point tag for a security
 #' @param identifier {String} A Security identifier (Ticker, FIGI, ISIN, CUSIP, Intrinio ID)
 #' @param tag {String} An Intrinio data tag ID or code
 #' @seealso \url{https://data.intrinio.com/data-tags}
@@ -226,7 +261,7 @@ getSecurityDataPointNumber <- function(identifier, tag) {
 }
 
 
-#' current text value of data-point tag for a security
+#' Returns current text value of data-point tag for a security
 #' @param identifier {String} A Security identifier (Ticker, FIGI, ISIN, CUSIP, Intrinio ID)
 #' @param tag {String} An Intrinio data tag ID or code
 #' @seealso \url{https://data.intrinio.com/data-tags}
@@ -247,15 +282,15 @@ getSecurityDataPointText <- function(identifier, tag) {
   }
 }
 
-#' historical values data-point tag for a security over specified time range
+#' Returns time-series of historical values data-point tag for a security over specified time range
 #' @param identifier {String} A Security identifier (Ticker, FIGI, ISIN, CUSIP, Intrinio ID)
 #' @param tag {String} An Intrinio data tag ID or code
 #' @param opts {named list} Optional query params for endpoint
 #' @param opts$start_date {Date} YYYY-MM-DD Return prices on or after the date
-#' @param opts$end_date': {Date} YYYY-MM-DD Return prices on or before the date
+#' @param opts$end_date {Date} YYYY-MM-DD Return prices on or before the date
 #' @param opts$sort_order {String = "desc"} desc | asc
-#' @param opts$frequency: {String = "daily"} daily | weekly | monthly | quarterly | yearly Return stock prices in the given frequency
-#' @param opts$page_size': {number = 100} The number of results to return per page
+#' @param opts$frequency {String = "daily"} daily | weekly | monthly | quarterly | yearly Return stock prices in the given frequency
+#' @param opts$page_size {number = 100} The number of results to return per page
 #' @family security endpoints
 #' @seealso \url{https://data.intrinio.com/data-tags}
 #' @export

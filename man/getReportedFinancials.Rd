@@ -20,8 +20,8 @@ statements of the XBRL filings from the company specified by the \code{id} param
 }
 \seealso{
 Other fundamental endpoints: \code{\link{getFundamentalById}},
-  \code{\link{getReportedFinancialsWide}},
-  \code{\link{getStandardizedFinancialsWide}},
+  \code{\link{getReportedFinancialsTable}},
+  \code{\link{getStandardizedFinancialsTable}},
   \code{\link{getStandardizedFinancials}},
   \code{\link{lookupFundamental}}
 }

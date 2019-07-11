@@ -2,7 +2,7 @@
 % Please edit documentation in R/security.service.R
 \name{getSecurityDataPointNumber}
 \alias{getSecurityDataPointNumber}
-\title{current numerical value data-point tag for a security}
+\title{Returns current numerical value data-point tag for a security}
 \usage{
 getSecurityDataPointNumber(identifier, tag)
 }
@@ -15,18 +15,19 @@ getSecurityDataPointNumber(identifier, tag)
 {numeric}
 }
 \description{
-current numerical value data-point tag for a security
+Returns current numerical value data-point tag for a security
 }
 \seealso{
 \url{https://data.intrinio.com/data-tags}
 
 Other security endpoints: \code{\link{getAllSecurities}},
-  \code{\link{getCompanyById}},
+  \code{\link{getIndicesDataPointHistory}},
   \code{\link{getSecurityById}},
   \code{\link{getSecurityDataPointHistory}},
   \code{\link{getSecurityDataPointText}},
   \code{\link{getSecurityDividendsLatest}},
   \code{\link{getSecurityEarningsLatest}},
+  \code{\link{getSecurityIntradayPrices}},
   \code{\link{getSecurityRealtimePrice}},
   \code{\link{getSecurityStockPrices}},
   \code{\link{getSecurityZacksAnalystRatingsSnapshot}}
