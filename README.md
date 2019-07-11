@@ -79,38 +79,38 @@ Usage Example
 |     | Endpoint                                      | function call              |
 |-----|:----------------------------------------------|:-------------------------------------------------------------------|
 | [X] | /securities                                   | [`getAllSecurities`](/doc/getAllSecurities.md)                     |
-| [X] | /securities/{identifier}                      | [`getSecurityById`](getSecurityById.md)                            |
-| [X] | /securities/{identifier}/prices               | [`getSecurityStockPrices`](getSecurityStockPrices.md)              |
-| [X] | /securities/{identifier}/prices/realtime      | [`getSecurityRealtimePrice`](getSecurityRealtimePrice.md)          |
-| [X] | /securities/{identifier}/prices/intraday      | [`getSecurityIntradayPrices`](getSecurityIntradayPrices.md)        |
-| [X] | /securities/{identifier}/dividends/latest     | [`getSecurityDividendsLatest`](getSecurityDividendsLatest.md)      |
-| [X] | /securities/{identifier}/earnings/latest      | [`getSecurityEarningsLatest`](getSecurityEarningsLatest.md)        |
-| [X] | /securities/{identifier}/zacks/analyst_ratings/snapshot | [`getSecurityZacksAnalystRatingsSnapshot`](getSecurityZacksAnalystRatingsSnapshot.md) |
-| [X] | /securities/{identifier}/data_point/{tag}/number | [`getSecurityDataPointNumber`](getSecurityDataPointNumber.md) |
-| [X] | /securities/{identifier}/data_point/{tag}/text | [`getSecurityDataPointText`](getSecurityDataPointText.md) |
-| [X] | /securities/{identifier}/historical_data/{tag} | [`getSecurityDataPointHistory`](getSecurityDataPointHistory.md) |
+| [X] | /securities/{identifier}                      | [`getSecurityById`](/doc/getSecurityById.md)                            |
+| [X] | /securities/{identifier}/prices               | [`getSecurityStockPrices`](/doc/getSecurityStockPrices.md)              |
+| [X] | /securities/{identifier}/prices/realtime      | [`getSecurityRealtimePrice`](/doc/getSecurityRealtimePrice.md)          |
+| [X] | /securities/{identifier}/prices/intraday      | [`getSecurityIntradayPrices`](/doc/getSecurityIntradayPrices.md)        |
+| [X] | /securities/{identifier}/dividends/latest     | [`getSecurityDividendsLatest`](/doc/getSecurityDividendsLatest.md)      |
+| [X] | /securities/{identifier}/earnings/latest      | [`getSecurityEarningsLatest`](/doc/getSecurityEarningsLatest.md)        |
+| [X] | /securities/{identifier}/zacks/analyst_ratings/snapshot | [`getSecurityZacksAnalystRatingsSnapshot`](/doc/getSecurityZacksAnalystRatingsSnapshot.md) |
+| [X] | /securities/{identifier}/data_point/{tag}/number | [`getSecurityDataPointNumber`](/doc/getSecurityDataPointNumber.md) |
+| [X] | /securities/{identifier}/data_point/{tag}/text | [`getSecurityDataPointText`](/doc/getSecurityDataPointText.md) |
+| [X] | /securities/{identifier}/historical_data/{tag} | [`getSecurityDataPointHistory`](/doc/getSecurityDataPointHistory.md) |
 
 ### Fundamentals
 
 |     | Endpoint                                      | function call              |
 |-----|:----------------------------------------------|:-------------------------------------------------------------------|
-| [X] | /fundamentals/lookup/{identifier}/{statement_code}/{fiscal_year}/{fiscal_period} | [`lookupFundamental`](lookupFundamental.md) |
-| [X] | /fundamentals/{id}                            | [`getFundamentalById`](getFundamentalById.md)                       |
-| [X] | /fundamentals/{id}/standardized_financials    | [`getStandardizedFinancials`](getStandardizedFinancials.md)         |
-| [X] | /fundamentals/{id}/standardized_financials    | [`getStandardizedFinancialsTable`](getStandardizedFinancialsTable.md) |
-| [X] | /fundamentals/{id}/reported_financials        | [`getReportedFinancials`](getReportedFinancials.md)                 |
-| [X] | /fundamentals/{id}/reported_financials        | [`getReportedFinancialsTable`](getReportedFinancialsTable.md)       |
+| [X] | /fundamentals/lookup/{identifier}/{statement_code}/{fiscal_year}/{fiscal_period} | [`lookupFundamental`](/doc/lookupFundamental.md) |
+| [X] | /fundamentals/{id}                            | [`getFundamentalById`](/doc/getFundamentalById.md)                       |
+| [X] | /fundamentals/{id}/standardized_financials    | [`getStandardizedFinancials`](/doc/getStandardizedFinancials.md)         |
+| [X] | /fundamentals/{id}/standardized_financials    | [`getStandardizedFinancialsTable`](/doc/getStandardizedFinancialsTable.md) |
+| [X] | /fundamentals/{id}/reported_financials        | [`getReportedFinancials`](/doc/getReportedFinancials.md)                 |
+| [X] | /fundamentals/{id}/reported_financials        | [`getReportedFinancialsTable`](/doc/getReportedFinancialsTable.md)       |
 
 ### Indices 
 
 |     | Endpoint                                             | function call              |
 |-----|:-----------------------------------------------------|:--------------------------------------------------------------|
-| [X] | /indices/stock_market                                | [`getAllStockMarketIndicies`](getAllStockMarketIndicies.md)   |
-| [X] | /indices/economic                                    | [`getAllEconomicIndicies`](getAllEconomicIndicies.md)         |
-| [X] | /indices/sic                                         | [`getAllSicIndicies`](getAllSicIndicies.md)                   |
-| [X] | /indices/{type}/{identifier}/data_point/{tag}/number | [`getIndicesDataPointNumber`](getIndicesDataPointNumber.md)   |
-| [X] | /indices/{type}/{identifier}/data_point/{tag}/text   | [`getIndicesDataPointText`](getIndicesDataPointText.md)       |
-| [X] | /indices/{type}/{identifier}/historical_data/{tag}   | [`getIndicesDataPointHistory`](getIndicesDataPointHistory.md) |
+| [X] | /indices/stock_market                                | [`getAllStockMarketIndicies`](/doc/getAllStockMarketIndicies.md)   |
+| [X] | /indices/economic                                    | [`getAllEconomicIndicies`](/doc/getAllEconomicIndicies.md)         |
+| [X] | /indices/sic                                         | [`getAllSicIndicies`](/doc/getAllSicIndicies.md)                   |
+| [X] | /indices/{type}/{identifier}/data_point/{tag}/number | [`getIndicesDataPointNumber`](/doc/getIndicesDataPointNumber.md)   |
+| [X] | /indices/{type}/{identifier}/data_point/{tag}/text   | [`getIndicesDataPointText`](/doc/getIndicesDataPointText.md)       |
+| [X] | /indices/{type}/{identifier}/historical_data/{tag}   | [`getIndicesDataPointHistory`](/doc/getIndicesDataPointHistory.md) |
 
 
 
