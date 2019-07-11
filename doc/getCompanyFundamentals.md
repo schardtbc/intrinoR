@@ -1,15 +1,18 @@
 ### `getCompanyFundamentals`
+***
+***
 
+### Description
+
+ All Fundamentals by Company
  Returns all Fundamentals for the Company with the given `identifier`. Returns Fundamentals matching parameters when supplied.
 
 ### Usage
-
 ```r
 getCompanyFundamentals(identifier, opts = list())
 ```
 
 ### Arguments
-
 Argument      |Description
 ------------- |----------------
 ```identifier```     |     String A Company identifier (Ticker, CIK, LEI, Intrinio ID)
@@ -23,18 +26,19 @@ Argument      |Description
 ```opts.start_date```     |     String Date YYYY-MM-DD Only on or after the given date
 ```opts.end_date```     |     String Date YYYY-MM-DD Only on or before the given date
 ```opts.page_size```     |     Number opts.pageSize The number of results to return (default to 100)
+### Value
 
+ fundamentalds tibble 
 
-###  Other company endpoints:
+### Seealso
 
-  [`getCompany`](getCompany.md) ,
+ Other company endpoints: [`getAllCompanies`](getAllCompanies.md) ,
   [`getCompanyDataPointHistory`](getCompanyDataPointHistory.md) ,
   [`getCompanyDataPointNumber`](getCompanyDataPointNumber.md) ,
   [`getCompanyDataPointText`](getCompanyDataPointText.md) ,
-  [`getCompanyFundamentals`](getCompanyFundamentals.md) ,
   [`getCompanyFilings`](getCompanyFilings.md) ,
   [`getCompanyIPOs`](getCompanyIPOs.md) ,
   [`getCompanyNews`](getCompanyNews.md) ,
-  [`getCompanySecurities`](getCompanySecurities.md) 
-
+  [`getCompanySecurities`](getCompanySecurities.md) ,
+  [`getCompany`](getCompany.md) 
 

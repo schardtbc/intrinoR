@@ -1,15 +1,18 @@
 ### `getAllCompanies`
+***
+***
 
+### Description
+
+ All Companies
  Returns all Companies. When parameters are specified, returns matching companies.
 
 ### Usage
-
 ```r
 getAllCompanies(opts = list())
 ```
 
 ### Arguments
-
 Argument      |Description
 ------------- |----------------
 ```opts```     |     named list Optional parameters
@@ -22,18 +25,19 @@ Argument      |Description
 ```opts$hasFundamentals```     |     Boolean Return only companies that have fundamentals when true
 ```opts$hasStockPrices```     |     Boolean Return only companies that have stock prices when true
 ```opts$pageSize```     |     Number The number of results to return (default to 100)
+### Value
 
+ companies tibble 
 
-###  Other company endpoints:
+### Seealso
 
-  [`getCompany`](getCompany.md) ,
-  [`getCompanyDataPointHistory`](getCompanyDataPointHistory.md) ,
+ Other company endpoints: [`getCompanyDataPointHistory`](getCompanyDataPointHistory.md) ,
   [`getCompanyDataPointNumber`](getCompanyDataPointNumber.md) ,
   [`getCompanyDataPointText`](getCompanyDataPointText.md) ,
-  [`getCompanyFundamentals`](getCompanyFundamentals.md) ,
   [`getCompanyFilings`](getCompanyFilings.md) ,
+  [`getCompanyFundamentals`](getCompanyFundamentals.md) ,
   [`getCompanyIPOs`](getCompanyIPOs.md) ,
   [`getCompanyNews`](getCompanyNews.md) ,
-  [`getCompanySecurities`](getCompanySecurities.md) 
-
+  [`getCompanySecurities`](getCompanySecurities.md) ,
+  [`getCompany`](getCompany.md) 
 

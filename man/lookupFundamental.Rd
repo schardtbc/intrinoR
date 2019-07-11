@@ -22,9 +22,9 @@ Returns the Fundamental for the Company with the given `identifier` and with the
 }
 \seealso{
 Other fundamental endpoints: \code{\link{getFundamentalById}},
-  \code{\link{getReportedFinancialsWide}},
+  \code{\link{getReportedFinancialsTable}},
   \code{\link{getReportedFinancials}},
-  \code{\link{getStandardizedFinancialsWide}},
+  \code{\link{getStandardizedFinancialsTable}},
   \code{\link{getStandardizedFinancials}}
 }
 \concept{fundamental endpoints}

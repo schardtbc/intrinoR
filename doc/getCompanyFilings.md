@@ -1,15 +1,17 @@
 ### `getCompanyFilings`
+***
+***
+
+### Description
 
  Returns a complete list of SEC filings for the Company with the given `identifier`
 
 ### Usage
-
 ```r
 getCompanyFilings(identifier, opts = list())
 ```
 
 ### Arguments
-
 Argument      |Description
 ------------- |----------------
 ```identifier```     |     String A Company identifier (Ticker, CIK, LEI, Intrinio ID)
@@ -18,17 +20,19 @@ Argument      |Description
 ```opts.start_date```     |     String Date YYYY-MM-DD Filed on or after the given date
 ```opts.end_date```     |     String Date YYYY-MM-DD Filed before or after the given date
 ```opts.page_size```     |     Number The number of results to return (default to 100)
+### Value
 
-###  Other company endpoints:
+ filings tibble 
 
-  [`getCompany`](getCompany.md) ,
+### Seealso
+
+ Other company endpoints: [`getAllCompanies`](getAllCompanies.md) ,
   [`getCompanyDataPointHistory`](getCompanyDataPointHistory.md) ,
   [`getCompanyDataPointNumber`](getCompanyDataPointNumber.md) ,
   [`getCompanyDataPointText`](getCompanyDataPointText.md) ,
   [`getCompanyFundamentals`](getCompanyFundamentals.md) ,
-  [`getCompanyFilings`](getCompanyFilings.md) ,
   [`getCompanyIPOs`](getCompanyIPOs.md) ,
   [`getCompanyNews`](getCompanyNews.md) ,
-  [`getCompanySecurities`](getCompanySecurities.md) 
-
+  [`getCompanySecurities`](getCompanySecurities.md) ,
+  [`getCompany`](getCompany.md) 
 

@@ -13,9 +13,9 @@ getFundamentalById(id)
 Returns detailed fundamental data for the given \code{id}.
 }
 \seealso{
-Other fundamental endpoints: \code{\link{getReportedFinancialsWide}},
+Other fundamental endpoints: \code{\link{getReportedFinancialsTable}},
   \code{\link{getReportedFinancials}},
-  \code{\link{getStandardizedFinancialsWide}},
+  \code{\link{getStandardizedFinancialsTable}},
   \code{\link{getStandardizedFinancials}},
   \code{\link{lookupFundamental}}
 }

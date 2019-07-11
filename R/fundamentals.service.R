@@ -101,7 +101,7 @@ getStandardizedFinancials <- function(id){
 #' @return standardized_financials {tibble} formated as wide table with one column per metric tag
 #' @family fundamental endpoints
 #' @export
-getStandardizedFinancialsWide <- function(id){
+getStandardizedFinancialsTable <- function(id){
   endpoint <- list()
   class(endpoint)<- "url"
   endpoint$path <- glue::glue("/fundamentals/{id}/standardized_financials")
@@ -140,7 +140,7 @@ getStandardizedFinancialsWide <- function(id){
 #' @return reported_financials {tibble} formated as wide table with one column per metric tag
 #' @family fundamental endpoints
 #' @export
-getReportedFinancialsWide <- function(id){
+getReportedFinancialsTable <- function(id){
   endpoint <- list()
   class(endpoint)<- "url"
   endpoint$path <- glue::glue("/fundamentals/{id}/reported_financials")

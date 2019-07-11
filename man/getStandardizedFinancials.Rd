@@ -22,9 +22,9 @@ company’s fundamentals and across all companies' fundamentals.
 }
 \seealso{
 Other fundamental endpoints: \code{\link{getFundamentalById}},
-  \code{\link{getReportedFinancialsWide}},
+  \code{\link{getReportedFinancialsTable}},
   \code{\link{getReportedFinancials}},
-  \code{\link{getStandardizedFinancialsWide}},
+  \code{\link{getStandardizedFinancialsTable}},
   \code{\link{lookupFundamental}}
 }
 \concept{fundamental endpoints}
