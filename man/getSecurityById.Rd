@@ -2,8 +2,7 @@
 % Please edit documentation in R/security.service.R
 \name{getSecurityById}
 \alias{getSecurityById}
-\title{Lookup Security
-Returns the Security with the given `identifier`}
+\title{Returns the Security with the given `identifier`}
 \usage{
 getSecurityById(identifier)
 }
@@ -14,7 +13,6 @@ getSecurityById(identifier)
 df {tibble}
 }
 \description{
-Lookup Security
 Returns the Security with the given `identifier`
 }
 \seealso{

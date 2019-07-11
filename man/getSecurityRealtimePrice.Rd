@@ -2,7 +2,7 @@
 % Please edit documentation in R/security.service.R
 \name{getSecurityRealtimePrice}
 \alias{getSecurityRealtimePrice}
-\title{realtime price for security}
+\title{Returns realtime price for security}
 \usage{
 getSecurityRealtimePrice(identifier, opts = list())
 }
@@ -14,7 +14,7 @@ getSecurityRealtimePrice(identifier, opts = list())
 \item{opts$source}{{String} iex | bats | bats_delayed | utp_delayed | cta_a_delayed | cta_b_delayed (defaults to best source availiable)}
 }
 \description{
-realtime price for security
+Returns realtime price for security
 }
 \seealso{
 Other security endpoints: \code{\link{getAllSecurities}},

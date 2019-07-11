@@ -4,7 +4,7 @@
 
 ### Description
 
- current numerical value data-point tag for an index
+ Returns current numerical value data-point tag for an index
 
 ### Usage
 ```r

@@ -4,7 +4,7 @@
 
 ### Description
 
- current text value of data-point tag for an index
+ Returns current text value of data-point tag for an index
 
 ### Usage
 ```r

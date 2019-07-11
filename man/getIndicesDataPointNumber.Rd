@@ -2,7 +2,7 @@
 % Please edit documentation in R/indicies.R
 \name{getIndicesDataPointNumber}
 \alias{getIndicesDataPointNumber}
-\title{current numerical value data-point tag for an index}
+\title{Returns current numerical value data-point tag for an index}
 \usage{
 getIndicesDataPointNumber(identifier, tag = "level",
   type = "stock_market")
@@ -16,7 +16,7 @@ getIndicesDataPointNumber(identifier, tag = "level",
 {numeric}
 }
 \description{
-current numerical value data-point tag for an index
+Returns current numerical value data-point tag for an index
 }
 \seealso{
 \url{https://data.intrinio.com/data-tags}

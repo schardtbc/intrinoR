@@ -2,7 +2,7 @@
 % Please edit documentation in R/security.service.R
 \name{getSecurityIntradayPrices}
 \alias{getSecurityIntradayPrices}
-\title{intraday prices for a security over requested time}
+\title{Returns intraday prices for a security over requested time}
 \usage{
 getSecurityIntradayPrices(identifier, opts = list(),
   max_records = 1000)
@@ -14,16 +14,16 @@ getSecurityIntradayPrices(identifier, opts = list(),
 
 \item{opts$start_date}{{Date} YYYY-MM-DD Return prices on or after the date}
 
-\item{opts$end_date'{Date}}{YYYY-MM-DD Return prices on or before the date}
+\item{opts$end_date}{{Date} YYYY-MM-DD Return prices on or before the date}
 
 \item{opts$start_time}{{Date} YYYY-MM-DD Return prices on or after the date}
 
-\item{opts$end_date':}{{Date} YYYY-MM-DD Return prices on or before the date}
+\item{opts$end_date}{{Date} YYYY-MM-DD Return prices on or before the date}
 
-\item{opts$page_size'}{{number = 100} The number of results to return per page}
+\item{opts$page_size}{{number = 100} The number of results to return per page}
 }
 \description{
-intraday prices for a security over requested time
+Returns intraday prices for a security over requested time
 }
 \seealso{
 Other security endpoints: \code{\link{getAllSecurities}},

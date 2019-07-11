@@ -4,7 +4,7 @@
 
 ### Description
 
- current text value of data-point tag for a security
+ Returns current text value of data-point tag for a security
 
 ### Usage
 ```r

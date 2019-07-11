@@ -4,7 +4,7 @@
 
 ### Description
 
- historical values data-point tag for a company over specified time range
+ Returns time series of historical values data-point tag for a company
 
 ### Usage
 ```r

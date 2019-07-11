@@ -4,7 +4,6 @@
 
 ### Description
 
- All Companies
  Returns all Companies. When parameters are specified, returns matching companies.
 
 ### Usage

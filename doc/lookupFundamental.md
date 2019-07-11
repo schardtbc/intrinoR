@@ -4,8 +4,7 @@
 
 ### Description
 
- Lookup Fundamental
- Returns the Fundamental for the Company with the given `identifier` and with the given parameters
+ Returns the fundamental financial data for the Company with the given `identifier` and with the given parameters
 
 ### Usage
 ```r

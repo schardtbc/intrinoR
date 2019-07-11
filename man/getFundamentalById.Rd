@@ -2,7 +2,7 @@
 % Please edit documentation in R/fundamentals.service.R
 \name{getFundamentalById}
 \alias{getFundamentalById}
-\title{Returns detailed fundamental data for the given \code{id}.}
+\title{Returns detailed fundamental financial data for the given \code{id}.}
 \usage{
 getFundamentalById(id)
 }
@@ -10,7 +10,7 @@ getFundamentalById(id)
 \item{id}{{String}  The Intrinio ID for the Fundamental}
 }
 \description{
-Returns detailed fundamental data for the given \code{id}.
+Returns detailed fundamental financial data for the given \code{id}.
 }
 \seealso{
 Other fundamental endpoints: \code{\link{getReportedFinancialsTable}},

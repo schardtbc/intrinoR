@@ -2,7 +2,7 @@
 % Please edit documentation in R/indicies.R
 \name{getIndicesDataPointHistory}
 \alias{getIndicesDataPointHistory}
-\title{historical values data-point tag for a index over specified time range}
+\title{Returns time-series of historical values data-point tag for a index over specified time range}
 \usage{
 getIndicesDataPointHistory(identifier, tag = "level",
   type = "stock_market", opts = list(), rm.na = TRUE)
@@ -16,11 +16,11 @@ getIndicesDataPointHistory(identifier, tag = "level",
 
 \item{opts$start_date}{{Date} YYYY-MM-DD Return prices on or after the date}
 
-\item{opts$end_date':}{{Date} YYYY-MM-DD Return prices on or before the date}
+\item{opts$end_date}{{Date} YYYY-MM-DD Return prices on or before the date}
 
 \item{opts$sort_order}{{String = "desc"} desc | asc}
 
-\item{opts$page_size':}{{number = 100} The number of results to return per page}
+\item{opts$page_size}{{number = 100} The number of results to return per page}
 }
 \description{
 Stock Market Indices: "$SPX"   "$DJI"   "$DJA"   "$TRAN"  "$UTIL"  "$NDX"   "$COMPQ"

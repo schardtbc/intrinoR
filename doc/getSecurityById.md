@@ -4,7 +4,6 @@
 
 ### Description
 
- Lookup Security
  Returns the Security with the given `identifier`
 
 ### Usage

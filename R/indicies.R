@@ -91,7 +91,7 @@ getAllSicIndicies <- function(opts = list()){
 }
 
 
-#' current numerical value data-point tag for an index
+#' Returns current numerical value data-point tag for an index
 #' @param identifier {String} A Index identifier (symbol, Intrinio ID)
 #' @param tag {String} An Intrinio data tag ID or code
 #' @seealso \url{https://data.intrinio.com/data-tags}
@@ -113,7 +113,7 @@ getIndicesDataPointNumber <- function(identifier, tag = "level", type = "stock_m
 }
 
 
-#' current text value of data-point tag for an index
+#' Returns current text value of data-point tag for an index
 #' @param identifier {String} A Security identifier (index symbol, Intrinio ID)
 #' @param tag {String} An Intrinio data tag ID or code
 #' @seealso \url{https://data.intrinio.com/data-tags}
@@ -134,7 +134,7 @@ getIndicesDataPointText <- function(identifier, tag= "level", index = "stock_mar
   }
 }
 
-#' historical values data-point tag for a index over specified time range
+#' Returns time-series of historical values data-point tag for a index over specified time range
 #'
 #'  Stock Market Indices: "$SPX"   "$DJI"   "$DJA"   "$TRAN"  "$UTIL"  "$NDX"   "$COMPQ"
 #'
@@ -142,9 +142,9 @@ getIndicesDataPointText <- function(identifier, tag= "level", index = "stock_mar
 #' @param tag {String} An Intrinio data tag ID or code (defaults to `level``)
 #' @param opts {named list} Optional query params for endpoint
 #' @param opts$start_date {Date} YYYY-MM-DD Return prices on or after the date
-#' @param opts$end_date': {Date} YYYY-MM-DD Return prices on or before the date
+#' @param opts$end_date {Date} YYYY-MM-DD Return prices on or before the date
 #' @param opts$sort_order {String = "desc"} desc | asc
-#' @param opts$page_size': {number = 100} The number of results to return per page
+#' @param opts$page_size {number = 100} The number of results to return per page
 #' @family security endpoints
 #' @seealso \url{https://data.intrinio.com/data-tags}
 #' @export

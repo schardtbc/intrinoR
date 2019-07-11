@@ -2,7 +2,7 @@
 % Please edit documentation in R/company.service.R
 \name{getCompanyDataPointNumber}
 \alias{getCompanyDataPointNumber}
-\title{current numerical value data-point tag for a company}
+\title{Returns current numerical value data-point tag for a company}
 \usage{
 getCompanyDataPointNumber(identifier, tag)
 }
@@ -15,7 +15,7 @@ getCompanyDataPointNumber(identifier, tag)
 {numeric}
 }
 \description{
-current numerical value data-point tag for a company
+Returns current numerical value data-point tag for a company
 }
 \seealso{
 \url{https://data.intrinio.com/data-tags}

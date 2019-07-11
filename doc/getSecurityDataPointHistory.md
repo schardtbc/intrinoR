@@ -4,7 +4,7 @@
 
 ### Description
 
- historical values data-point tag for a security over specified time range
+ Returns time-series of historical values data-point tag for a security over specified time range
 
 ### Usage
 ```r
@@ -18,10 +18,10 @@ Argument      |Description
 ```tag```     |     String An Intrinio data tag ID or code
 ```opts```     |     named list Optional query params for endpoint
 ```opts$start_date```     |     Date YYYY-MM-DD Return prices on or after the date
-```opts$end_date':```     |     Date YYYY-MM-DD Return prices on or before the date
+```opts$end_date```     |     Date YYYY-MM-DD Return prices on or before the date
 ```opts$sort_order```     |     String = "desc" desc | asc
-```opts$frequency:```     |     String = "daily" daily | weekly | monthly | quarterly | yearly Return stock prices in the given frequency
-```opts$page_size':```     |     number = 100 The number of results to return per page
+```opts$frequency```     |     String = "daily" daily | weekly | monthly | quarterly | yearly Return stock prices in the given frequency
+```opts$page_size```     |     number = 100 The number of results to return per page
 ### Seealso
 
  [https://data.intrinio.com/data-tags](https://data.intrinio.com/data-tags) 

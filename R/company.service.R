@@ -1,5 +1,4 @@
 
-#' All Companies
 #' Returns all Companies. When parameters are specified, returns matching companies.
 #' @param opts {named list} Optional parameters
 #' @param opts$latestFilingDate {String}  YYYY-MM-DD Last filing date
@@ -129,19 +128,18 @@ getCompanyNews <- function(identifier, opts = list(), max_n = 10) {
   return (df)
 }
 
-#' All Fundamentals by Company
 #' Returns all Fundamentals for the Company with the given &#x60;identifier&#x60;. Returns Fundamentals matching parameters when supplied.
 #' @param identifier {String}  A Company identifier (Ticker, CIK, LEI, Intrinio ID)
 #' @param opts {named list}  Optional parameters
-#' @param opts.filed_after {String} Date YYYY-MM-DD Filed on or after this date
-#' @param opts.filed_before {String} Date YYYY-MM-DD Filed on or before this date
-#' @param opts.reported_only {Boolean} Only as-reported fundamentals
-#' @param opts.fiscal_year {Number}  Only for the given fiscal year
-#' @param opts.statement_code {String} Only of the given statement code
-#' @param opts.type  {String} Only of the given type
-#' @param opts.start_date {String} Date YYYY-MM-DD Only on or after the given date
-#' @param opts.end_date {String} Date YYYY-MM-DD Only on or before the given date
-#' @param opts.page_size {Number} opts.pageSize The number of results to return (default to 100)
+#' @param opts$filed_after {String} Date YYYY-MM-DD Filed on or after this date
+#' @param opts$filed_before {String} Date YYYY-MM-DD Filed on or before this date
+#' @param opts$reported_only {Boolean} Only as-reported fundamentals
+#' @param opts$fiscal_year {Number}  Only for the given fiscal year
+#' @param opts$statement_code {String} Only of the given statement code
+#' @param opts$type  {String} Only of the given type
+#' @param opts$start_date {String} Date YYYY-MM-DD Only on or after the given date
+#' @param opts$end_date {String} Date YYYY-MM-DD Only on or before the given date
+#' @param opts$page_size {Number} opts$pageSize The number of results to return (default to 100)
 #' @return fundamentalds {tibble}
 #' @family company endpoints
 #' @export
@@ -173,16 +171,14 @@ getCompanyFundamentals <- function(identifier, opts = list()) {
 }
 
 
-#' All Filings by Company
-#'
+
 #' Returns a complete list of SEC filings for the Company with the given &#x60;identifier&#x60;
-#'
 #' @param identifier {String}  A Company identifier (Ticker, CIK, LEI, Intrinio ID)
 #' @param opts {named list} Optional parameters
-#' @param opts.report_type {String} Filter by &lt;a href&#x3D;\&quot;/documentation/sec_filing_report_types\&quot; target&#x3D;\&quot;_blank\&quot;&gt;report type&lt;/a&gt;. Separate values with commas to return multiple report types.
-#' @param opts.start_date {String} Date YYYY-MM-DD Filed on or after the given date
-#' @param opts.end_date {String} Date YYYY-MM-DD Filed before or after the given date
-#' @param opts.page_size {Number}  The number of results to return (default to 100)
+#' @param opts$report_type {String} Filter by &lt;a href&#x3D;\&quot;/documentation/sec_filing_report_types\&quot; target&#x3D;\&quot;_blank\&quot;&gt;report type&lt;/a&gt;. Separate values with commas to return multiple report types.
+#' @param opts$start_date {String} Date YYYY-MM-DD Filed on or after the given date
+#' @param opts$end_date {String} Date YYYY-MM-DD Filed before or after the given date
+#' @param opts$page_size {Number}  The number of results to return (default to 100)
 #' @return filings {tibble}
 #' @family company endpoints
 #' @export
@@ -214,7 +210,7 @@ getCompanyFilings <- function(identifier, opts = list()) {
 }
 
 
-#' current numerical value data-point tag for a company
+#' Returns current numerical value data-point tag for a company
 #' @param identifier {String} A company identifier (Ticker, FIGI, ISIN, CUSIP, Intrinio ID)
 #' @param tag {String} An Intrinio data tag ID or code
 #' @seealso \url{https://data.intrinio.com/data-tags}
@@ -237,7 +233,7 @@ getCompanyDataPointNumber <- function(identifier, tag) {
 }
 
 
-#' current text value of data-point tag for a company
+#' Returns current text value of data-point tag for a company
 #' @param identifier {String} A company identifier (Ticker, FIGI, ISIN, CUSIP, Intrinio ID)
 #' @param tag {String} An Intrinio data tag ID or code
 #' @seealso \url{https://data.intrinio.com/data-tags}
@@ -259,7 +255,7 @@ getCompanyDataPointText <- function(identifier, tag) {
   }
 }
 
-#' historical values data-point tag for a company over specified time range
+#' Returns time series of historical values data-point tag for a company
 #' @param identifier {String} A company identifier (Ticker, FIGI, ISIN, CUSIP, Intrinio ID)
 #' @param tag {String} An Intrinio data tag ID or code
 #' @param opts {named list} Optional query params for endpoint
@@ -300,20 +296,19 @@ getCompanyDataPointHistory <- function(identifier,tag, opts=list()) {
   return (df)
 }
 
-#' IPOs
-#'
+
 #' Returns initial public offerings (IPOs). An IPO is a public offering of private company stock. The act of \&quot;going public\&quot; is initiated by an IPO, at which point the company&#39;s stock trades on a major stock exchange (such as NYSE or NASDAQ). Intrinio covers all upcoming and recent IPOs for US exchanges.
 #'
 #' Note: sandbox has no data for this endpoint
 #'
 #' @param opts {named list}  Optional parameters
-#' @param opts.ticker {String}  Return IPOs with the given ticker (typically the IPO for the company)
-#' @param opts.status {String}  upcoming | priced | withdrwn Return IPOs with the given status. Upcoming IPOs are scheduled to occur in the future. Priced IPOs have occured and the company should be trading publicly. Withdrawn IPOs were planned to occurr but were withdrawn beforehand
-#' @param opts.start_date {Date}  Return IPOs on or after the given date
-#' @param opts.end_date {Date}  Return IPOs on or before the given date
-#' @param opts.offer_amount_greater_than {Number}  Return IPOs with an offer dollar amount greater than the given amount
-#' @param opts.offer_amount_less_than {Number}  Return IPOs with an offer dollar amount less than the given amount
-#' @param opts.page_ize {Number}  The number of results to return (default to 100)
+#' @param opts$ticker {String}  Return IPOs with the given ticker (typically the IPO for the company)
+#' @param opts$status {String}  upcoming | priced | withdrwn Return IPOs with the given status. Upcoming IPOs are scheduled to occur in the future. Priced IPOs have occured and the company should be trading publicly. Withdrawn IPOs were planned to occurr but were withdrawn beforehand
+#' @param opts$start_date {Date}  Return IPOs on or after the given date
+#' @param opts$end_date {Date}  Return IPOs on or before the given date
+#' @param opts$offer_amount_greater_than {Number}  Return IPOs with an offer dollar amount greater than the given amount
+#' @param opts$offer_amount_less_than {Number}  Return IPOs with an offer dollar amount less than the given amount
+#' @param opts$page_ize {Number}  The number of results to return (default to 100)
 #' @return ipos {tibble}
 #' @family company endpoints
 #' @export

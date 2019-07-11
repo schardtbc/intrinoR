@@ -2,7 +2,7 @@
 % Please edit documentation in R/company.service.R
 \name{getCompanyDataPointHistory}
 \alias{getCompanyDataPointHistory}
-\title{historical values data-point tag for a company over specified time range}
+\title{Returns time series of historical values data-point tag for a company}
 \usage{
 getCompanyDataPointHistory(identifier, tag, opts = list())
 }
@@ -26,7 +26,7 @@ getCompanyDataPointHistory(identifier, tag, opts = list())
 \item{opts$page_size':}{{number = 100} The number of results to return per page}
 }
 \description{
-historical values data-point tag for a company over specified time range
+Returns time series of historical values data-point tag for a company
 }
 \seealso{
 \url{https://data.intrinio.com/data-tags}

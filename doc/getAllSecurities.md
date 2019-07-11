@@ -4,7 +4,6 @@
 
 ### Description
 
- All Securities
  Returns all Securities to which you have access. When parameters are specified, returns matching Securities.
 
 ### Usage

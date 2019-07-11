@@ -2,7 +2,7 @@
 % Please edit documentation in R/fundamentals.service.R
 \name{getStandardizedFinancialsTable}
 \alias{getStandardizedFinancialsTable}
-\title{Returns professional-grade historical financial data. for the given \code{id}.}
+\title{Returns professional-grade standardized historical financial data for the given \code{id}.}
 \usage{
 getStandardizedFinancialsTable(id)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/company.service.R
 \name{getCompanyDataPointText}
 \alias{getCompanyDataPointText}
-\title{current text value of data-point tag for a company}
+\title{Returns current text value of data-point tag for a company}
 \usage{
 getCompanyDataPointText(identifier, tag)
 }
@@ -15,7 +15,7 @@ getCompanyDataPointText(identifier, tag)
 {String}
 }
 \description{
-current text value of data-point tag for a company
+Returns current text value of data-point tag for a company
 }
 \seealso{
 \url{https://data.intrinio.com/data-tags}

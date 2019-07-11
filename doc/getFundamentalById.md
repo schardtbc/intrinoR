@@ -4,7 +4,7 @@
 
 ### Description
 
- Returns detailed fundamental data for the given `id` .
+ Returns detailed fundamental financial data for the given `id` .
 
 ### Usage
 ```r

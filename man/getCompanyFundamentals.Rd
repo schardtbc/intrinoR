@@ -2,8 +2,7 @@
 % Please edit documentation in R/company.service.R
 \name{getCompanyFundamentals}
 \alias{getCompanyFundamentals}
-\title{All Fundamentals by Company
-Returns all Fundamentals for the Company with the given `identifier`. Returns Fundamentals matching parameters when supplied.}
+\title{Returns all Fundamentals for the Company with the given `identifier`. Returns Fundamentals matching parameters when supplied.}
 \usage{
 getCompanyFundamentals(identifier, opts = list())
 }
@@ -12,29 +11,28 @@ getCompanyFundamentals(identifier, opts = list())
 
 \item{opts}{{named list}  Optional parameters}
 
-\item{opts.filed_after}{{String} Date YYYY-MM-DD Filed on or after this date}
+\item{opts$filed_after}{{String} Date YYYY-MM-DD Filed on or after this date}
 
-\item{opts.filed_before}{{String} Date YYYY-MM-DD Filed on or before this date}
+\item{opts$filed_before}{{String} Date YYYY-MM-DD Filed on or before this date}
 
-\item{opts.reported_only}{{Boolean} Only as-reported fundamentals}
+\item{opts$reported_only}{{Boolean} Only as-reported fundamentals}
 
-\item{opts.fiscal_year}{{Number}  Only for the given fiscal year}
+\item{opts$fiscal_year}{{Number}  Only for the given fiscal year}
 
-\item{opts.statement_code}{{String} Only of the given statement code}
+\item{opts$statement_code}{{String} Only of the given statement code}
 
-\item{opts.type}{{String} Only of the given type}
+\item{opts$type}{{String} Only of the given type}
 
-\item{opts.start_date}{{String} Date YYYY-MM-DD Only on or after the given date}
+\item{opts$start_date}{{String} Date YYYY-MM-DD Only on or after the given date}
 
-\item{opts.end_date}{{String} Date YYYY-MM-DD Only on or before the given date}
+\item{opts$end_date}{{String} Date YYYY-MM-DD Only on or before the given date}
 
-\item{opts.page_size}{{Number} opts.pageSize The number of results to return (default to 100)}
+\item{opts$page_size}{{Number} opts$pageSize The number of results to return (default to 100)}
 }
 \value{
 fundamentalds {tibble}
 }
 \description{
-All Fundamentals by Company
 Returns all Fundamentals for the Company with the given `identifier`. Returns Fundamentals matching parameters when supplied.
 }
 \seealso{

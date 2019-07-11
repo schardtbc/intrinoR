@@ -2,8 +2,7 @@
 % Please edit documentation in R/security.service.R
 \name{getAllSecurities}
 \alias{getAllSecurities}
-\title{All Securities
-Returns all Securities to which you have access. When parameters are specified, returns matching Securities.}
+\title{Returns all Securities to which you have access. When parameters are specified, returns matching Securities.}
 \usage{
 getAllSecurities(opts = list())
 }
@@ -48,7 +47,6 @@ getAllSecurities(opts = list())
 securities {data.frame}
 }
 \description{
-All Securities
 Returns all Securities to which you have access. When parameters are specified, returns matching Securities.
 }
 \seealso{

@@ -2,7 +2,7 @@
 % Please edit documentation in R/security.service.R
 \name{getSecurityStockPrices}
 \alias{getSecurityStockPrices}
-\title{end-of-day prices for a security over requested time}
+\title{Returns end-of-day prices for a security over requested time}
 \usage{
 getSecurityStockPrices(identifier, opts = list())
 }
@@ -13,14 +13,14 @@ getSecurityStockPrices(identifier, opts = list())
 
 \item{opts$start_date}{{Date} YYYY-MM-DD Return prices on or after the date}
 
-\item{opts$end_date':}{{Date} YYYY-MM-DD Return prices on or before the date}
+\item{opts$end_date}{{Date} YYYY-MM-DD Return prices on or before the date}
 
-\item{opts$frequency:}{{String = "daily"} daily | weekly | monthly | quarterly | yearly Return stock prices in the given frequency}
+\item{opts$frequency}{{String = "daily"} daily | weekly | monthly | quarterly | yearly Return stock prices in the given frequency}
 
-\item{opts$page_size':}{{number = 100} The number of results to return per page}
+\item{opts$page_size}{{number = 100} The number of results to return per page}
 }
 \description{
-end-of-day prices for a security over requested time
+Returns end-of-day prices for a security over requested time
 }
 \seealso{
 Other security endpoints: \code{\link{getAllSecurities}},

@@ -4,7 +4,7 @@
 
 ### Description
 
- current text value of data-point tag for a company
+ Returns current text value of data-point tag for a company
 
 ### Usage
 ```r

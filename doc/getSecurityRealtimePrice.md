@@ -4,7 +4,7 @@
 
 ### Description
 
- realtime price for security
+ Returns realtime price for security
 
 ### Usage
 ```r
